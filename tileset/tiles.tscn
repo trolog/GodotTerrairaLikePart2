@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://art/tiles/mud1.png" type="Texture" id=1]
+[ext_resource path="res://art/tiles/mud2.png" type="Texture" id=2]
+[ext_resource path="res://art/tiles/mud0.png" type="Texture" id=3]
+[ext_resource path="res://art/tiles/mud4.png" type="Texture" id=4]
+[ext_resource path="res://art/tiles/mud3.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4, 4 )
+
+[node name="tiles" type="Node2D"]
+
+[node name="mud0" type="Sprite" parent="."]
+position = Vector2( 5, 5 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="mud0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mud0/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="mud1" type="Sprite" parent="."]
+position = Vector2( 14, 5 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="mud1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mud1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="mud2" type="Sprite" parent="."]
+position = Vector2( 23, 5 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="mud2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mud2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="mud3" type="Sprite" parent="."]
+position = Vector2( 32, 5 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="mud3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mud3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="mud4" type="Sprite" parent="."]
+position = Vector2( 41, 5 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="mud4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mud4/StaticBody2D"]
+shape = SubResource( 1 )
